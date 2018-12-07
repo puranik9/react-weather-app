@@ -1,12 +1,92 @@
 .App {
   text-align: center;
+  background: url("./sky_background.jpg");
+  background-size: cover;
+  opacity: 0.9;
 }
 
 .weather-titles {
-  margin-bottom: 2em;
+  padding: 2em 0 0;
+  color: #ffffff;
 }
 
-.weather-dashboard {
-  min-height: 200px;
-  margin: 4em 0;
+.weather-titles h1 {
+  margin: 0;
+}
+
+.weather-tile {
+  min-height: 120px;
+  width: 350px;
+  display: inline-flex;
+  margin: 2em;
+  border: 1px solid #777;
+  border-radius: 10px;
+  background: rgba(15,15,15,.7);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  cursor: pointer;
+}
+
+.weather-tile_remove-button button {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.weather-tile_remove-button button > * {
+  font-size: 18px;
+}
+
+.weather-tile_forecast-button button {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 165px;
+  left: 165px;
+  padding: 0;
+}
+
+.weather-tile_forecast-button button > * {
+  font-size: 24px;
+}
+
+.weather-tile_details p {
+  font-size: 20px;
+}
+
+.weather-tile_details {
+  padding: 20px 10px;
+  color: #ffffff;
+}
+
+.weather-tile_image {
+  padding: 40px 10px;
+  color: #ffffff;
+}
+
+.weather-tile_temperature {
+  padding: 40px 10px;
+  color: #ffffff;
+}
+
+.weather-tile_temperature > span {
+  font-size: 24px;
+}
+
+.weather-form {
+  padding: 0 0 2em;
+}
+
+.weather-form input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.weather-form button {
+  padding: 6px 10px;
+  margin: 5px;
 }
